@@ -74,7 +74,78 @@ ul.menu li {
 
 
 
+
+
+
+
+
+
+
 .block-container {
+  column-count: 3; /* Устанавливаем три колонки */
+  column-gap: 20px; /* Расстояние между колонками */
+  padding: 20px; /* Отступы от краёв */
+}
+
+.block-container img {
+  width: 100%; /* Изображения автоматически подгоняются под колонку */
+  margin-bottom: 20px; /* Расстояние между изображениями */
+  display: block;
+}
+
+/* Адаптация для планшетов */
+@media (max-width: 1024px) {
+  .block-container {
+    column-count: 2; /* Две колонки на средних экранах */
+  }
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 480px) {
+  .block-container {
+    column-count: 1; /* Одна колонка на маленьких экранах */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.block-container {
+  column-count: 3; 
+  column-gap: 10px; 
+}
+
+.block-container img {
+  width: 100%; 
+  margin-bottom: 10px; 
+  display: block; 
+  height: auto; 
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+/*.block-container {
 	position: relative;
 	float: left;
 	margin: 1px;
@@ -84,7 +155,10 @@ ul.menu li {
 .block-container img { width: 350px; height: 350px; }
 .block-container div, 
 .block-container img { position: absolute; }
-.block-container img {z-index: 1000;}
+.block-container img {z-index: 1000;}*/
+
+
+
 .block-front {
 	z-index: 1001;
 	background-color: white;
